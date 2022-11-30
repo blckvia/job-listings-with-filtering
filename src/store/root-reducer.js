@@ -1,3 +1,8 @@
 const { combineReducers } = require('redux');
 
-export const rootReducer = combineReducers({});
+/* eslint-disable */
+import { positionReducer } from './positions/position-reducer';
+
+export const rootReducer = combineReducers({
+    positions: positionReducer,
+});
